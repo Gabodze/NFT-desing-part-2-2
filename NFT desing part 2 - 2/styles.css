@@ -1,0 +1,1129 @@
+@font-face {
+    font-family: Work Sans;
+    src: url(./fonts/WorkSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Work Sans;
+    src: url(./fonts/WorkSans-Regular.ttf);
+}
+@font-face {
+    font-family: Space Mono;
+    src: url(./fonts/SpaceMono-Regular.ttf);
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(43, 43, 43, 1);
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.navLogo{
+    width: 243.41px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.logoicon{
+    width: 32px;
+    height: 32px;
+}
+
+.logo{
+    width: 200px;
+    height: 20px;
+}
+
+.navmenu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.navmenu>a{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.signIn{
+    width: 152px;
+    height: 60px;
+    padding: 0 30px 0 30px;
+    border-radius: 20px;
+    border: none;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(162, 89, 255, 1);
+}
+
+.burgerMenu{
+    display: none;
+}
+
+
+.coverProfile{
+    position: relative;
+    width: 100%;
+    height: 320px;   
+    background-size: cover;
+    background-image: url(./assets/Image\ main.png);
+}
+
+.abovePhoto{
+    height: 320px;   
+    background: linear-gradient(to bottom,  rgba(151, 71, 255, 0), rgba(151, 71, 255, 1)  );
+}
+.mainImage{
+    height: 370px;
+    position: relative;
+}
+
+
+.avatar{
+    position: absolute;
+    padding: 250px;
+    padding-left: 115px;
+    z-index: 1;
+}
+
+.artistInfoSection{
+    width: 100%;
+    height: 457px;
+    padding: 40px 115px 40px  115px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.artistNameButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mobArtsInfo{
+    display: none;
+}
+.artistInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Name{
+    margin: 0;
+    font-family: Work Sans;
+    font-size: 51px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+}
+
+.totalSale{
+    display: flex;
+    flex-direction: column;
+    width: 156.67px;
+}
+
+.numbers{
+    margin: 0;
+    font-family: Space Mono;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.statsSpan{
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bioHeading{
+    margin: 0;
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(133, 133, 132, 1);
+}
+
+.biodesc{
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.webLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.GTAsdesc{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+button{
+    width: 186px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    align-items: center;
+    border: none;
+    background-color: rgba(162, 89, 255, 1);
+}
+
+.follow{
+    width: 145px;
+    height: 60px;
+    padding: 0 30px 0 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(162, 89, 255, 1);
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    background-color: transparent;
+}
+
+.frame249{
+    padding-top: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid #3B3B3B;
+    
+}
+
+.frameline{
+    margin: 0;
+    width: 100%;
+    height: 1px;
+    background-color: aqua;
+}
+
+.frame247{
+    height: 60px;
+    margin-left: 115px;
+    margin-right: 115px;
+    display: flex;    
+    flex-wrap: wrap;
+    width: auto;
+    flex-direction: row;
+}
+
+
+.tabsLabel {
+    width: 33.33%;
+    padding:  0 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:rgba(133, 133, 132, 1);
+}
+  
+.tabs__radio {
+    display: none;
+}
+
+.navNumber{
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    background-color:rgba(59, 59, 59, 1);
+}
+
+.tabsLabel:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.tabs__radio:checked + .tabsLabel {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    ;
+    border-bottom: 2px solid rgba(133, 133, 132, 1);
+    
+  }
+
+.tabs__radio:checked + .tabsLabel + .navNumber{
+    background-color:#858584;
+  } 
+
+
+/* NFTCardsSection */
+.NFTCardsSection{
+    padding: 80px 115px 80px 115px;
+    background-color: #3B3B3B;
+}
+
+.NFTRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.NFTCard{
+    width: 31%;
+    height: 469px;
+    background-color: #2B2B2B;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.NFTCard>img{
+    height: 295px;
+}
+
+.nftInfo{
+    padding: 30px 20px 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ArtistInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.artistName{
+    margin: 0;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.artistAvatar{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.cardspn{
+    margin: 0;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.AdditionalInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.price, .HiestBid{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 50%;
+}
+
+.priceheading, .HiestBidheading{
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(133, 133, 132, 1);
+}
+
+.priceBody, .HiestBidBody{
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.HiestBidheading, .HiestBidBody{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 334px;
+    padding: 40px 115px 40px 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(59, 59, 59, 1);
+    border-top: 2px solid #2B2B2B;
+}
+
+.footerInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.NFTMarketplaceInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footerAdditionalInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Nft{
+    width: 238px;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(204, 204, 204, 1);
+}
+
+.community{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.CommHeader{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(204, 204, 204, 1);
+}
+
+
+
+.explre{
+    margin: 0;
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;   
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pagespan{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(204, 204, 204, 1);
+}
+
+.footerSubscribe{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footerSubheading{
+    margin: 0;
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footerSubscInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerSubP{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(204, 204, 204, 1);
+}
+
+form{
+    width: 420px;
+    height: 60px;
+    padding: 16px 0 16px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+input{
+    width: 182px;
+    border: none;
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+.email::placeholder{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(43, 43, 43, 1);
+}
+
+.subscribebutton{
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+    width: 211px;
+    height: 60px;
+    padding: 0 50px 0 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    background-color: rgba(162, 89, 255, 1);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.subscribebuttonMob{
+    display: none;
+}
+
+.form2{
+    display: none;
+}
+
+.deviderdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.devider{
+    margin: 0;
+    width: 100%;
+    background-color: rgba(133, 133, 132, 1);
+}
+
+.abbr{
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(204, 204, 204, 1);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+  
+
+    .navLogo{
+        width: 182px;
+        height: 24px;
+    }
+
+    .navmenu{
+        display: none;
+    }
+
+    .burgerMenu{
+        display: block;
+    }
+
+    main{
+        gap: 40px;
+    }
+
+    .NFTCardsSection{
+        padding: 80px 72px 80px 72px;
+        background-color: #3B3B3B;
+    }
+
+
+
+    .artistInfoSection{
+        width: 100%;
+        height: 453px;
+        padding: 30px 72px 30px  72px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .artistNameButton{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+
+    .Name{
+        font-family: Work Sans;
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+
+    .numbers{
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .statsSpan{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+
+    .bioHeading{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    
+    .biodesc{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .NFTCard{
+        width: 47%;
+        height: 469px;
+        background-color: #2B2B2B;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        gap: 49px;
+        height: auto;
+    }
+
+    .footerInfo{
+        flex-direction: column;
+        gap: 30px;
+        justify-content: left;
+    }
+
+
+    .NFTMarketplaceInfo{
+        gap: 20px;
+    }
+
+    .Explore{
+        gap: 20px;
+    }
+
+    .subscribebuttonMob{
+        display: block;
+    }
+
+    .subscribebuttonMob{
+        display: none;
+    }
+    
+    .footerSubscribe{
+        gap: 20px;
+    }
+
+    .form2{
+        display: none;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 600px){
+    
+
+    .navLogo{
+        width: 182px;
+        height: 24px;
+    }
+    
+    .logo{
+        width: 148px;
+        height: 14px;
+    }
+    
+    .logoicon{
+        width: 24px;
+        height: 24px;
+    }
+    nav{
+        padding: 15px 30px 15px 30px;
+        height: 54px;
+    }
+
+    .footerSubscribe{
+        width: 100%;
+    }
+
+
+    .mainImg{
+        height: 232px;
+    }
+
+   
+    .navmenu{
+        display: none;
+    }
+
+    .burgerMenu{
+        display: block;
+    }
+
+    main{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .coverProfile{
+        position: relative;
+        width: 100%;
+        height: 250px;   
+        background-size: cover;
+        background-image: url(./assets/Image\ main.png);
+    }
+
+    .abovePhoto{        
+        padding-top: 180px;     
+        height: 250px;   
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to bottom,  rgba(151, 71, 255, 0), rgba(151, 71, 255, 1)  );
+    }
+
+    .mainImage{
+        height: 300px;
+    }
+
+    .avatar{
+        display: flex;
+        margin: auto;
+        position: absolute;
+        margin: auto;
+        z-index: 1;
+        padding: 0;
+    }
+
+
+    .frame247{
+        margin-left:  30px;
+        margin-right: 30px;
+
+    }
+
+    .tabsLabel{
+        padding:  0 10px;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color:rgba(133, 133, 132, 1);
+    }
+
+    .navNumber{
+        display: none;
+    }
+
+    .mobArtsInfo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .artistInfo{
+        display: none;
+    }
+    
+    .artistInfoSection{
+        width: 100%;
+        height: 526px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .NFTCardsSection{
+        padding: 80px 30px ;
+    }
+
+    .Name{
+        width: fit-content;
+        font-family: Work Sans;
+        font-size: 28px;
+        line-height: 39px;
+    }
+
+    button, .follow{
+        width: 100%;
+    }
+
+    .GTAs{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    
+    .GTAsdesc{
+        display: none;
+    }
+    .GTAs>img{
+        width: 100%;
+    }
+
+    .numbers{
+        margin: 0;
+        font-family: Space Mono;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .statsSpan{
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .bioHeading{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .biodesc{
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .NFTCard{
+        width: 100%;
+        height: 469px;
+        background-color: #2B2B2B;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    footer{
+        width: 100%;
+        height: 776px;
+        padding: 40px 30px 40px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: rgba(59, 59, 59, 1);
+
+    }
+
+    .footerInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Nft{
+        width: 100%;
+        height: 44px;
+    }
+
+    .NFTMarketplaceInfo{
+        gap: 20px;
+    }
+
+    .Explore{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerSubscribe{
+        gap: 20px;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    .subscribebutton{
+        display: none;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .subscribebuttonMob{
+        width: 100%;
+        height: 60px;
+        padding: 0 50px 0 50px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        background-color: rgba(162, 89, 255, 1);
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: white;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .subscribelink{
+        width: 100%;
+        height: 60px;
+        padding: 0 50px 0 50px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        background-color: rgba(162, 89, 255, 1);
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: white;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        
+        
+    }
+
+    .form2{
+        padding: 0;
+        margin: 0;
+    }
+
+    .subscribeMobile{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .form2{
+        display: block;
+    }
+
+
+}
+
+
+
+
